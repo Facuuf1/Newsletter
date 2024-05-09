@@ -1,0 +1,217 @@
+@import url(https://fonts.google.com/specimen/Roboto);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    
+    background-color: hsl(234, 29%, 20%);
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.container{
+    
+    width: 800px;
+    background: none;
+    display: flex;
+    
+    
+    overflow: hidden;
+    height: 480px;
+    
+
+     
+        
+    
+    
+}
+
+.container .grupo{
+    display: grid; 
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2rem;
+    padding: 1rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    font-family: sans-serif;
+    transform: translateX();
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+.container .grupo .left-side{
+    padding: 1.5rem;
+    width: 370px;
+    margin: 1.5rem 0;
+    
+    
+}
+.container .grupo .left-side .title{
+    margin-bottom: 2rem;
+}
+.container .grupo .left-side .title h1{ 
+    font-size: 2.9rem;
+    font-family:  sans-serif;
+    margin-bottom: 1.5rem;
+}
+.container .grupo .left-side .title p{
+    font-size: 14px;
+}
+.container .grupo .left-side .info{
+    margin-bottom: 1.5rem; 
+    
+    
+}
+.container .grupo .left-side .info .tilde{
+    display: flex; 
+    align-items: center;
+    margin-bottom: 0.5rem;
+    gap: 0.4rem;
+} 
+.container .grupo .left-side .info p{
+    font-size: 14px;
+}
+.container .grupo .left-side .info i{
+    font-size: 1.2rem;
+    background: none;
+    color:  hsl(4, 100%, 67%);
+    
+}
+.container .grupo .left-side .email .label-email{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+
+}
+.container .grupo .left-side .email .label-email p{
+    font-size: 11px;
+    font-weight: bold;
+    
+}
+.container .grupo .left-side .email #email{
+    width: 100%;
+    height: 2.4rem;
+    border-radius: 8px;
+    padding: 10px;
+    outline: none;
+    border: solid 1px hsl(231, 7%, 60%);
+
+}
+.container .grupo .left-side .email #email:hover{
+    cursor: pointer;
+    border: solid 1px black;
+
+}
+.container .grupo .left-side .email{
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+#btn-subscribe{
+    width: 100%;
+    height: 2.4rem;
+    border-radius: 8px;
+    color: white;
+    background-color: hsl(234, 29%, 20%);
+    border: solid 1px hsl(234, 29%, 20%);
+}
+#btn-subscribe:hover{
+    cursor: pointer;
+    background: linear-gradient(to left, hsl(4, 100%, 63%),hsl(0, 100%, 75%));
+    border: none;
+    box-shadow:0 5px 20px 2px hsl(4, 82%, 74%);
+
+}
+.container .grupo .left-side .email .error-msg{
+    color: hsl(4, 100%, 67%);
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    font-size: 11px;
+    
+}
+.container .grupo .left-side .email  #email.active-error{
+    background-color: hsl(4, 82%, 85%);
+    color: hsl(4, 100%, 65%);
+    border:solid 1px hsl(4, 100%, 71%);
+    
+
+}
+
+
+.right-side{
+    background-color:  hsl(4, 100%, 67%);
+    border-radius: 10px;
+    
+    
+}
+.right-side img{
+    width: 100%;
+    background-color: rebeccapurple;
+    height: 100%;
+}
+
+.container-success{
+    width: 350px;
+    border-radius: 10px;    
+    background-color: white;
+    padding: 2rem;   
+    display: none;
+}
+.container-success .grupo-success .icon i{
+    font-size: 3rem;
+    color: hsl(4, 100%, 67%);
+    
+}
+.container-success .grupo-success .info-success{
+    margin: 1.5rem 0;
+}
+.container-success .grupo-success .info-success h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.container-success .grupo-success .info-success p{
+    font-size: 14px;
+    
+}
+.container-success .grupo-success .info-success span{
+    font-weight: bold;
+    font-size: 14px;
+    
+}
+#btn-dissmiss{
+    width: 100%;
+    height: 2.4rem;
+    border-radius: 8px;
+    color: white;
+    background-color: hsl(234, 29%, 20%);
+    border: solid 1px hsl(234, 29%, 20%);
+}
+#btn-dissmiss:hover{
+    cursor: pointer;
+    background: linear-gradient(to left, hsl(4, 100%, 63%),hsl(0, 100%, 75%));
+    border: none;
+    box-shadow:0 5px 20px 2px hsl(4, 82%, 74%);
+
+}
+.active{
+    display: none;
+    
+}
+.no-active{
+    display:unset;
+}
